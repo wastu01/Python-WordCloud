@@ -8,3 +8,10 @@
 #### https://pypi.org/project/GoogleNews/
 #### http://120.108.221.55/PROFCHWU/dctai/index.php
 
+## 執行畫面：
+
+https://repl.it/join/kmktrtrh-wastu01
+
+## 輸出畫面：
+
+https://mr-01.medium.com/python-爬取新聞製作文字雲-beb89aefe348
