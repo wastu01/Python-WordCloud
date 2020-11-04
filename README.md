@@ -8,9 +8,6 @@
 #### https://pypi.org/project/GoogleNews/
 #### http://120.108.221.55/PROFCHWU/dctai/index.php
 
-## 執行畫面：
-
-https://repl.it/join/kmktrtrh-wastu01
 
 ## 輸出畫面：
 
