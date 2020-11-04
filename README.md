@@ -11,4 +11,4 @@
 
 ## 輸出畫面：
 
-https://mr-01.medium.com/python-爬取新聞製作文字雲-beb89aefe348
+[https://mr-01.medium.com/python-爬取新聞製作文字雲](http://bit.ly/請點擊此處前往)
