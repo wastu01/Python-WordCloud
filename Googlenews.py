@@ -26,7 +26,7 @@ googlenews.search(x)
 
 alldata = googlenews.result()
 result = googlenews.gettext()
-links = googlenews.get__links()
+links = googlenews.get_links()
 # print(type(result))
 # print(len(result))
 # print(alldata)
@@ -45,8 +45,7 @@ df = pd.DataFrame(
     '標題': result,
     '連結': links
 })
- 
-df
+
 
 
 # In[52]:
