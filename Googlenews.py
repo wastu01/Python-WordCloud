@@ -36,7 +36,7 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][0]
+url = df['連結'][6]
 print(url)
 
 user_agent = {
@@ -45,20 +45,17 @@ user_agent = {
 r = requests.get(url, headers=user_agent)
 r.encoding = "utf-8"
 web_content = r.text
-soup = BeautifulSoup(web_content, 'html', 'features="html.parser"')
+soup = BeautifulSoup(web_content,'lxml')
 
 articleContent = soup.find_all('p')
-
-# In[53]:
-
 
 article = []
 for p in articleContent:
     article.append(p.text)
 
 articleAll = '\n'.join(article)
-# print(articleAll)
 
+# print(articleAll)
 # 分段用
 
 
@@ -150,4 +147,4 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/demo08.png")
+wc.to_file("img/2021-0515.png")
