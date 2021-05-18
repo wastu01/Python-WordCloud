@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 import pandas as pd
-import requests
 import jieba
 from GoogleNews import GoogleNews
 from bs4 import BeautifulSoup
+import requests
 
 googlenews = GoogleNews()
 
@@ -45,7 +45,7 @@ user_agent = {
 r = requests.get(url, headers=user_agent)
 r.encoding = "utf-8"
 web_content = r.text
-soup = BeautifulSoup(web_content,'lxml')
+soup = BeautifulSoup(web_content, 'html.parser')
 
 articleContent = soup.find_all('p')
 
@@ -61,8 +61,7 @@ articleAll = '\n'.join(article)
 
 jieba.load_userdict('dict.txt.big.txt')
 
-d = articleAll.replace('[^\w\s]', '').replace('／', "").replace('《', '').replace('》', '').replace('，', '').replace('。',
-                                                                                                                  '').replace(
+d = articleAll.replace('!', '').replace('／', "").replace('《', '').replace('》', '').replace('，', '').replace('。', '').replace(
     '「', '').replace('」', '').replace('（', '').replace('）', '').replace('！', '').replace('？', '').replace('、',
                                                                                                           '').replace(
     '▲', '').replace('…', '').replace('：', '')
@@ -80,13 +79,14 @@ jieba.setLogLevel(20)
 # print('Default為精確模式'+": " + "/ ".join(Sentence)+ '\n')
 
 Sentence = jieba.cut_for_search(d)
-print('搜索引擎模式' + ": " + "/ ".join(Sentence) + '\n')
+# print('搜索引擎模式' + ": " + "/ ".join(Sentence) + '\n')
 
-Sentence = jieba.cut_for_search(d)
 
 import numpy as np
 
 from PIL import Image
+
+from collections import Counter
 
 import matplotlib.pyplot as plt
 
@@ -107,7 +107,7 @@ for sentence in Sentence:
     else:
         terms[sentence] = 1
 
-# print(Counter(terms))
+print(Counter(terms))
 # generate_from_text()方法會採納stopwords參數 也可使用
 
 # https://coolors.co/palettes/popular
@@ -127,7 +127,7 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/SourceHanSansTC-Bold.otf",
+wc = WordCloud(font_path="/Users/larry/Library/Fonts/SourceHanSansTW-Regular.otf",
                mask=mask_color,
                max_font_size=45,
                max_words=2000,
