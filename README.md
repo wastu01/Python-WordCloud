@@ -14,8 +14,8 @@
 
 [https://mr-01.medium.com/python-爬取新聞製作文字雲](http://bit.ly/請點擊此處前往)
 
-#### 備註：wordcloud 1.5.0 正則表達式判斷空格會報錯
-#### We need at least 1 word to plot a word cloud, got 0.
-#### 嘗試1.8.1以上版本運作正常 
-#### 除錯參考資料：[CSDNBLOG-词云（wordcloud）报错](https://blog.csdn.net/python__reported/article/details/106089876)
-
+## 備註：
+ 使用系統環境 python 3.8 pycharm IDE 執行成功
+ anaconda 環境下 juputer 執行撈不到 setence 內容
+ 
+ 暫時無解

@@ -147,4 +147,4 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-0515.png")
+wc.to_file("img/2021-0521.png")
