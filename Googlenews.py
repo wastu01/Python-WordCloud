@@ -36,7 +36,7 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][6]
+url = df['連結'][3]
 print(url)
 
 user_agent = {
@@ -127,7 +127,7 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/SourceHanSansTW-Regular.otf",
+wc = WordCloud(font_path="/Users/larry/Library/Fonts/tetai-2.ttf",
                mask=mask_color,
                max_font_size=45,
                max_words=2000,
@@ -147,4 +147,4 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-0521.png")
+wc.to_file("img/2021-0523-校正回歸.png")
