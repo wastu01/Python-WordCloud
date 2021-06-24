@@ -36,8 +36,9 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][3]
+url = df['連結'][0]
 print(url)
+# 取其中一篇文章做分析測試
 
 user_agent = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36'}
@@ -127,12 +128,12 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/tetai-2.ttf",
+wc = WordCloud(font_path="Kaiso-Next-B.otf",
                mask=mask_color,
-               max_font_size=45,
-               max_words=2000,
+               max_font_size=35,
+               max_words=4000,
                stopwords=stopwords,
-               margin=1,
+               margin=0,
                relative_scaling=0)
 
 wc.generate_from_frequencies(terms)
@@ -147,4 +148,4 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-0523-校正回歸.png")
+wc.to_file("img/2021-0624-疫情.png")
