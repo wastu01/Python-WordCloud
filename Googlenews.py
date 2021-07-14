@@ -128,7 +128,7 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="Kaiso-Next-B.otf",
+wc = WordCloud(font_path="/Users/larry/Library/Fonts/ChunLianXingShuZiTi-1.ttf",
                mask=mask_color,
                max_font_size=35,
                max_words=4000,
@@ -148,4 +148,4 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-0624-疫情.png")
+wc.to_file("img/2021-0713-預約疫苗.png")
