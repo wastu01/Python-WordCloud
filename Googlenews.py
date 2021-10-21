@@ -16,6 +16,8 @@ googlenews.clear()
 x = input("請輸入要搜尋的關鍵字，將為你搜集相關字詞內容:")
 googlenews.search(x)
 
+# 優化：輸入空白需重新輸入
+
 alldata = googlenews.result()
 result = googlenews.gettext()
 links = googlenews.get_links()
@@ -36,7 +38,7 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][0]
+url = df['連結'][2]
 print(url)
 # 取其中一篇文章做分析測試
 
@@ -68,7 +70,7 @@ d = articleAll.replace('!', '').replace('／', "").replace('《', '').replace('�
     '▲', '').replace('…', '').replace('：', '')
 # print(d)
 
-jieba.setLogLevel(20)
+jieba.setLogLevel(10)
 
 # Sentence = jieba.cut(d, cut_all=True)
 # print('全模式'+": "  + "/ ".join(Sentence) + '\n')   
@@ -148,4 +150,5 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-0713-預約疫苗.png")
+wc.to_file("img/2021-1021-虎豹潭溺水.png")
+# 檔名可優化偵測當下日期 使用者輸入字詞 就不用手動更改
