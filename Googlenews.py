@@ -150,5 +150,5 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-1021-虎豹潭溺水.png")
+wc.to_file("img/2021-1021-城中城.png")
 # 檔名可優化偵測當下日期 使用者輸入字詞 就不用手動更改
