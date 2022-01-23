@@ -38,7 +38,7 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][2]
+url = df['連結'][0]
 print(url)
 # 取其中一篇文章做分析測試
 
@@ -62,7 +62,7 @@ articleAll = '\n'.join(article)
 # 分段用
 
 
-jieba.load_userdict('dict.txt.big.txt')
+jieba.load_userdict('/Users/larry/Github/Python-WordCloud/dict.txt.big.txt')
 
 d = articleAll.replace('!', '').replace('／', "").replace('《', '').replace('》', '').replace('，', '').replace('。', '').replace(
     '「', '').replace('」', '').replace('（', '').replace('）', '').replace('！', '').replace('？', '').replace('、',
@@ -97,7 +97,7 @@ from wordcloud import WordCloud, ImageColorGenerator
 
 from scipy.ndimage import gaussian_gradient_magnitude
 
-with open('stopword.txt', 'r', encoding="utf-8") as f:
+with open('/Users/larry/Github/Python-WordCloud/stopword.txt', 'r', encoding="utf-8") as f:
     stopwords = f.read().split('\n')
 
 terms = {}
@@ -119,8 +119,8 @@ print(Counter(terms))
 artDf = pd.DataFrame.from_dict(terms, orient='index', columns=['詞頻'])
 artDf.sort_values(by=['詞頻'], ascending=False)
 
-img = "color"
-img_path = "%s.png" % img
+img = "color-0"
+img_path = "/Users/larry/Github/Python-WordCloud/%s.png" % img
 
 mask_color = np.array(Image.open(img_path))
 mask_color = mask_color[::3, ::3]
@@ -150,5 +150,5 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/2021-1021-城中城.png")
+wc.to_file("img/新竹疫情.png")
 # 檔名可優化偵測當下日期 使用者輸入字詞 就不用手動更改
