@@ -62,7 +62,7 @@ articleAll = '\n'.join(article)
 # 分段用
 
 
-jieba.load_userdict('/Users/larry/Github/Python-WordCloud/dict.txt.big.txt')
+jieba.load_userdict('/Users/larry/Documents/Github/Python-WordCloud/dict.txt.big.txt')
 
 d = articleAll.replace('!', '').replace('／', "").replace('《', '').replace('》', '').replace('，', '').replace('。', '').replace(
     '「', '').replace('」', '').replace('（', '').replace('）', '').replace('！', '').replace('？', '').replace('、',
@@ -97,7 +97,7 @@ from wordcloud import WordCloud, ImageColorGenerator
 
 from scipy.ndimage import gaussian_gradient_magnitude
 
-with open('/Users/larry/Github/Python-WordCloud/stopword.txt', 'r', encoding="utf-8") as f:
+with open('/Users/larry/Documents/Github/Python-WordCloud/stopword.txt', 'r', encoding="utf-8") as f:
     stopwords = f.read().split('\n')
 
 terms = {}
@@ -120,7 +120,7 @@ artDf = pd.DataFrame.from_dict(terms, orient='index', columns=['詞頻'])
 artDf.sort_values(by=['詞頻'], ascending=False)
 
 img = "color-0"
-img_path = "/Users/larry/Github/Python-WordCloud/%s.png" % img
+img_path = "/Users/larry/Documents/Github/Python-WordCloud/img/%s.png" % img
 
 mask_color = np.array(Image.open(img_path))
 mask_color = mask_color[::3, ::3]
@@ -130,7 +130,7 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/ChunLianXingShuZiTi-1.ttf",
+wc = WordCloud(font_path="/Users/larry/Library/Fonts/YouSheBiaoTiYuan/YouSheBiaoTiYuan-2.otf",
                mask=mask_color,
                max_font_size=35,
                max_words=4000,
@@ -150,5 +150,5 @@ plt.figure(figsize=(25, 25))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/新竹疫情.png")
+wc.to_file("img/taiwan.png")
 # 檔名可優化偵測當下日期 使用者輸入字詞 就不用手動更改
