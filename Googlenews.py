@@ -38,7 +38,7 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][0]
+url = df['連結'][3]
 print(url)
 # 取其中一篇文章做分析測試
 
@@ -119,8 +119,7 @@ print(Counter(terms))
 artDf = pd.DataFrame.from_dict(terms, orient='index', columns=['詞頻'])
 artDf.sort_values(by=['詞頻'], ascending=False)
 
-img = "color-0"
-img_path = "/Users/larry/Documents/Github/Python-WordCloud/img/%s.png" % img
+img_path = "/Users/larry/Documents/Github/Python-WordCloud/img/color-0.png"
 
 mask_color = np.array(Image.open(img_path))
 mask_color = mask_color[::3, ::3]
@@ -130,7 +129,7 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/YouSheBiaoTiYuan/YouSheBiaoTiYuan-2.otf",
+wc = WordCloud(font_path="/Users/larry/Library/Fonts/index.ttf",
                mask=mask_color,
                max_font_size=35,
                max_words=4000,
@@ -145,10 +144,10 @@ wc.recolor(color_func=image_colors)
 # 視覺化
 
 plt.imshow(wc, interpolation="bilinear")
-plt.axis("off")
-plt.figure(figsize=(25, 25))
+plt.axis("ttf")
+plt.figure(figsize=(20, 20))
 plt.show()
 
 # plt.savefig("Wordcloud.png")
-wc.to_file("img/taiwan.png")
+wc.to_file("img/AI.png")
 # 檔名可優化偵測當下日期 使用者輸入字詞 就不用手動更改

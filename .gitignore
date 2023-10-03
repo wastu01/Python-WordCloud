@@ -125,3 +125,4 @@ dmypy.json
 .pyre/
 *.xml
 *.idea
+.DS_Store
