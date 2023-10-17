@@ -38,7 +38,7 @@ df = pd.DataFrame(
         '連結': links
     })
 
-url = df['連結'][3]
+url = df['連結'][2]
 print(url)
 # 取其中一篇文章做分析測試
 
@@ -129,7 +129,7 @@ mask_image[mask_image.sum(axis=2) == 0] = 255
 edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
 mask_image[edges > .08] = 255
 
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/index.ttf",
+wc = WordCloud(font_path="/Users/larry/Library/Fonts/chinese.otf",
                mask=mask_color,
                max_font_size=35,
                max_words=4000,
