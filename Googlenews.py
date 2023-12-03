@@ -1,153 +1,106 @@
+
 #!/usr/bin/env python
 # coding: utf-8
+
+# import sys
+
+# # 嘗試導入所需套件，如果導入失敗則提示安裝
+# try:
+#     xxxx
+# except ImportError as e:
+#     missing_pkg = str(e).split("No module named ")[1].strip("'")
+#     print(f"套件 {missing_pkg} 尚未安裝，請先進行安裝。")
+#     sys.exit(1)
+
+
 import pandas as pd
 import jieba
 from GoogleNews import GoogleNews
-from bs4 import BeautifulSoup
-import requests
-
-googlenews = GoogleNews()
-
-googlenews.setlang('cn')
-googlenews.setperiod('d')
-googlenews.setencode('utf-8')
-googlenews.clear()
-
-x = input("請輸入要搜尋的關鍵字，將為你搜集相關字詞內容:")
-googlenews.search(x)
-
-# 優化：輸入空白需重新輸入
-
-alldata = googlenews.result()
-result = googlenews.gettext()
-links = googlenews.get_links()
-# print(type(result))
-# print(len(result))
-# print(alldata)
-
-
-print()
-
-for n in range(len(result)):
-    print(result[n])
-    print(links[n])
-
-df = pd.DataFrame(
-    {
-        '標題': result,
-        '連結': links
-    })
-
-url = df['連結'][2]
-print(url)
-# 取其中一篇文章做分析測試
-
-user_agent = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36'}
-
-r = requests.get(url, headers=user_agent)
-r.encoding = "utf-8"
-web_content = r.text
-soup = BeautifulSoup(web_content, 'html.parser')
-
-articleContent = soup.find_all('p')
-
-article = []
-for p in articleContent:
-    article.append(p.text)
-
-articleAll = '\n'.join(article)
-
-# print(articleAll)
-# 分段用
-
-
-jieba.load_userdict('/Users/larry/Documents/Github/Python-WordCloud/dict.txt.big.txt')
-
-d = articleAll.replace('!', '').replace('／', "").replace('《', '').replace('》', '').replace('，', '').replace('。', '').replace(
-    '「', '').replace('」', '').replace('（', '').replace('）', '').replace('！', '').replace('？', '').replace('、',
-                                                                                                          '').replace(
-    '▲', '').replace('…', '').replace('：', '')
-# print(d)
-
-jieba.setLogLevel(10)
-
-# Sentence = jieba.cut(d, cut_all=True)
-# print('全模式'+": "  + "/ ".join(Sentence) + '\n')   
-
-# Sentence = jieba.cut(d, cut_all=False)
-# print('精確模式'+": " + "/ ".join(Sentence)+ '\n')  
-
-# Sentence = jieba.cut(d)  
-# print('Default為精確模式'+": " + "/ ".join(Sentence)+ '\n')
-
-Sentence = jieba.cut_for_search(d)
-# print('搜索引擎模式' + ": " + "/ ".join(Sentence) + '\n')
-
-
-import numpy as np
-
-from PIL import Image
-
 from collections import Counter
-
 import matplotlib.pyplot as plt
-
+from datetime import datetime
+from PIL import Image
+import numpy as np
+from scipy.ndimage import gaussian_gradient_magnitude
 from wordcloud import WordCloud, ImageColorGenerator
 
-from scipy.ndimage import gaussian_gradient_magnitude
+def main():
+    # Google News初始化設定
+    googlenews = GoogleNews()
+    googlenews.setlang('zh-tw')
+    googlenews.setperiod('d')
+    
+    # 使用者輸入關鍵字
+    keyword = "藍白"
+    # keyword = input("請輸入要搜尋的關鍵字: ")
+    googlenews.search(keyword)
 
-with open('/Users/larry/Documents/Github/Python-WordCloud/stopword.txt', 'r', encoding="utf-8") as f:
-    stopwords = f.read().split('\n')
+    # 獲取搜尋結果
+    result = googlenews.result()
 
-terms = {}
-for sentence in Sentence:
-    if sentence in stopwords:
-        continue
+    # 顯示新聞標題和連結
+    for item in result:
+        print(f"標題: {item['title']}")
+        print(f"連結: {item['link']}")
+        print('---')
 
-    if sentence in terms:
-        terms[sentence] += 1
-    else:
-        terms[sentence] = 1
+    # 進行斷詞處理並計算詞頻
+    all_titles = ' '.join([item['title'] for item in result])
+    words = jieba.cut(all_titles)
+    word_count = Counter(words)
 
-print(Counter(terms))
-# generate_from_text()方法會採納stopwords參數 也可使用
+    # 顯示斷詞統計表格
+    df = pd.DataFrame(word_count.items(), columns=['word', 'count'])
+    df_sorted = df.sort_values(by='count', ascending=False).reset_index(drop=True)
+    print(df_sorted.head(20))  # 顯示前20個最常出現的詞
+    
+        
+    # 詢問使用者字體檔案路徑
+    font_path_input = "/Users/larry/Github/Python-WordCloud/TaipeiSansTCBeta-Bold.ttf"
+    # font_path_input = input("請輸入中文字體的檔案路徑: ")
+    # 文字雲圖片遮罩檔案路徑
+    img_path = "/Users/larry/Github/Python-WordCloud/img/color-mask.jpeg"
+    
+    # 文字雲的尺寸
+    # desired_width = 800
+    # desired_height = 400
+    
+    mask_color = np.array(Image.open(img_path))
+    # 每隔_個像素取一個像素
+    mask_color = mask_color[::2, ::2]
+    
+    mask_image = mask_color.copy()
+    threshold = 1  # 根據圖片調整閾值
+    mask_image[np.all(mask_image < threshold, axis=2)] = 255
+    # 邊緣檢測
+    edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
+    mask_image[edges > .09] = 255
+    
+    # 顏色生成
+    image_colors = ImageColorGenerator(mask_image)
+    image_colors.default_color = [0.9,0.9,0.9]
 
-# https://coolors.co/palettes/popular
+    # 生成文字雲
+    wordcloud = WordCloud(
+    font_path=font_path_input,
+    width=3200,
+    height=1600,
+    max_font_size=50,  
+    max_words=4000,
+    mask=mask_image,
+    color_func=image_colors # 從遮罩圖片中提取顏色
+    ).generate_from_frequencies(word_count)
+    
+    plt.imshow(wordcloud)
+    plt.axis("off")
+    plt.show()
 
 
-artDf = pd.DataFrame.from_dict(terms, orient='index', columns=['詞頻'])
-artDf.sort_values(by=['詞頻'], ascending=False)
+    # 儲存文字雲圖片
+    today = datetime.now().strftime('%Y%m%d_%H%M')
+    image_filename = f"{today}_{keyword}.png"
+    wordcloud.to_file(image_filename)
+    print(f"文字雲圖片已儲存為: {image_filename}")
 
-img_path = "/Users/larry/Documents/Github/Python-WordCloud/img/color-0.png"
-
-mask_color = np.array(Image.open(img_path))
-mask_color = mask_color[::3, ::3]
-mask_image = mask_color.copy()
-mask_image[mask_image.sum(axis=2) == 0] = 255
-
-edges = np.mean([gaussian_gradient_magnitude(mask_color[:, :, i] / 255., 2) for i in range(3)], axis=0)
-mask_image[edges > .08] = 255
-
-wc = WordCloud(font_path="/Users/larry/Library/Fonts/chinese.otf",
-               mask=mask_color,
-               max_font_size=35,
-               max_words=4000,
-               stopwords=stopwords,
-               margin=0,
-               relative_scaling=0)
-
-wc.generate_from_frequencies(terms)
-image_colors = ImageColorGenerator(mask_color)
-wc.recolor(color_func=image_colors)
-
-# 視覺化
-
-plt.imshow(wc, interpolation="bilinear")
-plt.axis("ttf")
-plt.figure(figsize=(20, 20))
-plt.show()
-
-# plt.savefig("Wordcloud.png")
-wc.to_file("img/AI.png")
-# 檔名可優化偵測當下日期 使用者輸入字詞 就不用手動更改
+if __name__ == "__main__":
+    main()
