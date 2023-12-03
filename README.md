@@ -1,18 +1,21 @@
 # Python-WordCloud
- >使用者輸入欲搜尋新聞關鍵字，爬取關鍵字文章內容給 Jieba 斷詞，並分析文字產生文字雲。
- >理想狀態是希望能夠做到搜尋更大量文本，直接在網頁前端就能渲染出來成果並能分享到各大社群平台
+> 本專案允許使用者輸入新聞關鍵字，爬取相關文章內容，並使用 Jieba 進行斷詞分析，最終生成文字雲。我們的目標是擴大文本搜尋範圍，並能在網頁前端直接渲染文字雲，方便分享至社群平台。
 
- > 2021.10.18 更新：中研院有提供繁體中文的 [transformers](https://github.com/ckiplab/ckip-transformers)自然語言處理工具。相關研究及應用：[CKIP Lab 中文詞知識庫小組](https://ckip.iis.sinica.edu.tw/)
+> 2021.10.18 更新：中研院提供的繁體中文 [transformers](https://github.com/ckiplab/ckip-transformers) 自然語言處理工具現已可用。詳情可見 [CKIP Lab 中文詞知識庫小組](https://ckip.iis.sinica.edu.tw/)。
 
 ## 參考資料：
-#### https://github.com/youngmihuang/lyrics_application
-#### https://pypi.org/project/GoogleNews/
-#### http://120.108.221.55/PROFCHWU/dctai/index.php
+#### [YoungMi Huang 的歌詞應用案例](https://github.com/youngmihuang/lyrics_application)
+#### [GoogleNews Python 套件](https://pypi.org/project/GoogleNews/)
+#### [Digital Chinese Text Analysis 中文數位文本分析](http://120.108.221.55/PROFCHWU/dctai/index.php)
 
 ## 輸出畫面：
 
-[https://mr-01.medium.com/python-爬取新聞製作文字雲](http://bit.ly/請點擊此處前往)
+[Python爬取Google新聞生成文字雲範例](http://bit.ly/請點擊此處前往)
 
 ## 補充：
 
-> 把資料收集起來後，還可以做輿情分析，以及比對各家媒體對於事件報導的立場偏好。
+> 此專案收集的資料可用於輿情分析，以及比較不同媒體對事件的報導立場。
+
+> 後記（2023/12）：重新執行此專案時發現，從 Google 新聞獲取的網址末端包含追蹤參數，需進行清理以便正常訪問。
+
+> 推薦使用最新自然語言處理技術 LangChain，進行更深入的文本分析和輿情洞察。
