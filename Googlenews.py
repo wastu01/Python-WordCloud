@@ -1,16 +1,5 @@
-
 #!/usr/bin/env python
 # coding: utf-8
-
-# import sys
-
-# # 嘗試導入所需套件，如果導入失敗則提示安裝
-# try:
-#     xxxx
-# except ImportError as e:
-#     missing_pkg = str(e).split("No module named ")[1].strip("'")
-#     print(f"套件 {missing_pkg} 尚未安裝，請先進行安裝。")
-#     sys.exit(1)
 
 
 import pandas as pd
@@ -61,9 +50,6 @@ def main():
     # 文字雲圖片遮罩檔案路徑
     img_path = "/Users/larry/Github/Python-WordCloud/img/color-mask.jpeg"
     
-    # 文字雲的尺寸
-    # desired_width = 800
-    # desired_height = 400
     
     mask_color = np.array(Image.open(img_path))
     # 每隔_個像素取一個像素
