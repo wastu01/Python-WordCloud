@@ -1,0 +1,34 @@
+// Website : https://coolors.co/palettes/trending
+// 打開 chrome console 執行
+
+// 選取所有 .palette-card_colors 內的 span 標籤
+const colorElements = document.querySelectorAll('.palette-card_colors span');
+
+// 將所有 span 標籤內的文字（HEX 色碼）存成一個 list
+const hexCodes = Array.from(colorElements).map(element => element.textContent);
+
+// 在每個色碼前加上 '#'
+const formattedColors = hexCodes.map(color => `#${color}`);
+
+// 將結果組合成一行
+const result = `${formattedColors.join(',')}`;
+
+// 輸出 HEX 色碼 list
+console.log(result);
+
+// 創建 Blob 對象
+const blob = new Blob([result], { type: 'text/plain' });
+
+// 創建臨時下載鏈接
+const link = document.createElement('a');
+link.href = URL.createObjectURL(blob);
+link.download = 'color_list.txt';
+
+// 將鏈接添加到頁面並觸發點擊下載
+document.body.appendChild(link);
+link.click();
+
+// 下載後刪除臨時鏈接
+document.body.removeChild(link);
+
+// colors = [#606C38, #283618, #FEFAE0, #DDA15E, #BC6C25, #8ECAE6, #219EBC, #023047, #FFB703, #FB8500, #DAD7CD, #A3B18A, #588157, #3A5A40, #344E41, #CDB4DB, #FFC8DD, #FFAFCC, #BDE0FE, #A2D2FF, #780000, #C1121F, #FDF0D5, #003049, #669BBC, #CCD5AE, #E9EDC9, #FEFAE0, #FAEDCD, #D4A373, #EDAFB8, #F7E1D7, #DEDBD2, #B0C4B1, #4A5759, #EDEDE9, #D6CCC2, #F5EBE0, #E3D5CA, #D5BDAF, #5F0F40, #9A031E, #FB8B24, #E36414, #0F4C5C, #03045E, #0077B6, #00B4D8, #90E0EF, #CAF0F8, #000814, #001D3D, #003566, #FFC300, #FFD60A, #003049, #D62828, #F77F00, #FCBF49, #EAE2B7, #264653, #2A9D8F, #E9C46A, #F4A261, #E76F51, #22577A, #38A3A5, #57CC99, #80ED99, #C7F9CC, #000000, #14213D, #FCA311, #E5E5E5, #FFFFFF, #03045E, #023E8A, #0077B6, #0096C7, #00B4D8, #48CAE4, #90E0EF, #ADE8F4, #CAF0F8, #9B5DE5, #F15BB5, #FEE440, #00BBF9, #00F5D4, #D8E2DC, #FFE5D9, #FFCAD4, #F4ACB7, #9D8189, #F08080, #F4978E, #F8AD9D, #FBC4AB, #FFDAB9, #F0EAD2, #DDE5B6, #ADC178, #A98467, #6C584C, #6F1D1B, #BB9457, #432818, #99582A, #FFE6A7, #CAD2C5, #84A98C, #52796F, #354F52, #2F3E46, #96BBBB, #618985, #414535, #F2E3BC, #C19875, #FFE5EC, #FFC2D1, #FFB3C6, #FF8FAB, #FB6F92, #FFD6FF, #E7C6FF, #C8B6FF, #B8C0FF, #BBD0FF, #386641, #6A994E, #A7C957, #F2E8CF, #BC4749, #0A0908, #22333B, #EAE0D5, #C6AC8F, #5E503F, #463F3A, #8A817C, #BCB8B1, #F4F3EE, #E0AFA0, #03071E, #370617, #6A040F, #9D0208, #D00000, #DC2F02, #E85D04, #F48C06, #FAA307, #FFBA08, #F72585, #7209B7, #3A0CA3, #4361EE, #4CC9F0, #BEE9E8, #62B6CB, #1B4965, #CAE9FF, #5FA8D3, #0D1B2A, #1B263B, #415A77, #778DA9, #E0E1DD, #0FA3B1, #B5E2FA, #F9F7F3, #EDDEA4, #F7A072, #E63946, #F1FAEE, #A8DADC, #457B9D, #1D3557, #006D77, #83C5BE, #EDF6F9, #FFDDD2, #E29578, #FF9F1C, #FFBF69, #FFFFFF, #CBF3F0, #2EC4B6, #EF476F, #FFD166, #06D6A0, #118AB2, #073B4C, #FFFCF2, #CCC5B9, #403D39, #252422, #EB5E28, #001427, #708D81, #F4D58D, #BF0603, #8D0801, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF, #22223B, #4A4E69, #9A8C98, #C9ADA7, #F2E9E4, #FFADAD, #FFD6A5, #FDFFB6, #CAFFBF, #9BF6FF, #A0C4FF, #BDB2FF, #FFC6FF, #FFFFFC, #012A4A, #013A63, #01497C, #014F86, #2A6F97, #2C7DA0, #468FAF, #61A5C2, #89C2D9, #A9D6E5, #353535, #3C6E71, #FFFFFF, #D9D9D9, #284B63, #335C67, #FFF3B0, #E09F3E, #9E2A2B, #540B0E, #F6BD60, #F7EDE2, #F5CAC3, #84A59D, #F28482, #F4F1DE, #E07A5F, #3D405B, #81B29A, #F2CC8F, #2B2D42, #8D99AE, #EDF2F4, #EF233C, #D90429];
