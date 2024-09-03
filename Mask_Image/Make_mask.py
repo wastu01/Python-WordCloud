@@ -1,12 +1,11 @@
 from PIL import Image, ImageDraw
-import ast
 
 # 設定圖像大小
 image_size = 512  # 圖像的寬度和高度
-small_square_size = 30  # 每個小正方形的寬度和高度
+small_square_size = 20  # 每個小正方形的寬度和高度
 
 # 讀取 color_list.txt 文件中的顏色
-with open('color_list.txt', 'r') as f:
+with open('/Users/larry/Github/Python-WordCloud/Mask_Image/color_list.txt', 'r') as f:
     # 讀取文件內容並將其轉換為列表
     colors = f.readline().strip().split(",")
     print(type(colors))
@@ -28,4 +27,4 @@ for i in range(0, image_size, small_square_size):
 
 # # 儲存圖片
 img.show()
-img.save("./img/square_mask1.png")
+img.save("Square_mask.png")
