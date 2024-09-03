@@ -12,9 +12,10 @@
 #### [Python斷詞與文字雲教學課堂講義](http://120.108.221.55/PROFCHWU/dctai/index.php)
 #### [E W 的自動化搜尋新聞實作文章](http://13.231.129.69/2020/11/11/python-googlenews/)
 #### [Clay 的教學文章 [Python] 使用 GoogleNews 套件輕鬆取得 Google News 新聞資訊](https://clay-atlas.com/blog/2019/10/14/python-chinese-tutorial-googlenews-package/)
-
-進階用法：
+#### [Clay 的教學文章 [Python] wordcloud 模組使用 mask 生成特定形狀、顏色](https://clay-atlas.com/blog/2020/04/24/python-cn-package-note-wordcloud-mask-background/)
+Jieba 進階用法：
 #### [YoungMi Huang 的歌詞應用案例](https://github.com/youngmihuang/lyrics_application)
+
 
 ## 輸出畫面：
 
