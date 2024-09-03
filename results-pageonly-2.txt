@@ -1,0 +1,91 @@
+Results from page_at(2):
+Result 0:
+title: 吳崑玉：柯文哲的「三不」不只毀壞人設 更是毀滅人格
+media: 上報Up Media
+date: 9 分鐘前
+datetime: nan
+desc: 柯P逃過北院羈押庭後對群眾說:「我不知道京華城容積840%，直到今年三、四月媒體討論才知道。」這跟他的五十...
+link: https://www.upmedia.mg/news_info.php%3FType%3D2%26SerialNo%3D210565&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIBRAC&usg=AOvVaw17yFFzWfyYz-x4FoDAHSg9
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 1:
+title: 律師鄭深元進柯辦公室待3小時 柯文哲再赴台大醫院探柯爸
+media: Yahoo新聞
+date: 2 分鐘前
+datetime: nan
+desc: 政治中心／台北報導民眾黨主席柯文哲無保請回，台北地檢署花了2天時間整理抗告理由，3日傍晚5點正式向北院提出抗告，律師鄭深元，也在傍晚進到柯文哲辦公室，一待就待...
+link: https://tw.news.yahoo.com/%25E5%25BE%258B%25E5%25B8%25AB%25E9%2584%25AD%25E6%25B7%25B1%25E5%2585%2583%25E9%2580%25B2%25E6%259F%25AF%25E8%25BE%25A6%25E5%2585%25AC%25E5%25AE%25A4%25E5%25BE%25853%25E5%25B0%258F%25E6%2599%2582-%25E6%259F%25AF%25E6%2596%2587%25E5%2593%25B2%25E5%2586%258D%25E8%25B5%25B4%25E5%258F%25B0%25E5%25A4%25A7%25E9%2586%25AB%25E9%2599%25A2%25E6%258E%25A2%25E6%259F%25AF%25E7%2588%25B8-155850738.html&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQICRAC&usg=AOvVaw37Mx4CDFQIy19LpwxBFWhX
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 2:
+title: 柯文哲假帳案！李文宗證人轉被告 200萬交保受電子監控
+media: TVBS新聞網
+date: 7 分鐘前
+datetime: nan
+desc: 民眾黨主席柯文哲「五大弊案」纏身，台北地檢署偵辦京華城案，聲請羈押被駁回，難認柯文哲「犯罪嫌疑重大」，裁定無保請回，檢方今（3）日下午提抗告，高院預計明（4）...
+link: https://news.tvbs.com.tw/local/2607087&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIAxAC&usg=AOvVaw0qLKsLqNY8geVEQCZFwATn
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 3:
+title: 網友扒出「記者吳怡萱」7年前追訪柯文哲容積率 如今柯說「不知道 」?
+media: Yahoo新聞
+date: 0 分鐘前
+datetime: nan
+desc: 政治中心／洪正達報導京華城容積弊案可以說正在滿城風雨中，重要關係人沈慶京、應曉薇、彭政聲皆已被羈押，唯獨關鍵核章者的前台北市長柯文哲裁定無保請回，...
+link: https://tw.news.yahoo.com/%25E7%25B6%25B2%25E5%258F%258B%25E6%2589%2592%25E5%2587%25BA-%25E8%25A8%2598%25E8%2580%2585%25E5%2590%25B3%25E6%2580%25A1%25E8%2590%25B1-7%25E5%25B9%25B4%25E5%2589%258D%25E8%25BF%25BD%25E8%25A8%25AA%25E6%259F%25AF%25E6%2596%2587%25E5%2593%25B2%25E5%25AE%25B9%25E7%25A9%258D%25E7%258E%2587-%25E5%25A6%2582%25E4%25BB%258A%25E6%259F%25AF%25E8%25AA%25AA-%25E4%25B8%258D%25E7%259F%25A5%25E9%2581%2593-155006508.html&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQICBAC&usg=AOvVaw2p46yV0fCzWvBlabauUB96
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 4:
+title: 柯文哲政治獻金假帳案 前競總財務長李文宗200萬交保
+media: 聯合新聞網
+date: 1 分鐘前
+datetime: nan
+desc: 台北地檢署偵辦柯文哲政治獻金假帳案有重大進展。檢方比對金流後今晚再緊急傳喚柯競總財務長李文宗，訊後認為李文宗涉及作假帳，...
+link: https://udn.com/news/story/124199/8204780&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIBBAC&usg=AOvVaw03GVqfaKrtkJNtARyPBhcZ
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 5:
+title: 追查柯文哲政治獻金 李文宗證人轉被告200萬交保 (圖)
+media: Yahoo新聞
+date: 2 分鐘前
+datetime: nan
+desc: 台北地檢署偵辦柯文哲政治獻金案，3日再度指揮法務部調查局展開偵查行動，以被告身分約談柯文哲競總財務長李文宗（圖）到案。檢察官深夜諭令李文宗新台幣200萬元交保，...
+link: https://tw.news.yahoo.com/%25E8%25BF%25BD%25E6%259F%25A5%25E6%259F%25AF%25E6%2596%2587%25E5%2593%25B2%25E6%2594%25BF%25E6%25B2%25BB%25E7%258D%25BB%25E9%2587%2591-%25E6%259D%258E%25E6%2596%2587%25E5%25AE%2597%25E8%25AD%2589%25E4%25BA%25BA%25E8%25BD%2589%25E8%25A2%25AB%25E5%2591%258A200%25E8%2590%25AC%25E4%25BA%25A4%25E4%25BF%259D-%25E5%259C%2596-154855836.html&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIAhAC&usg=AOvVaw1CB1gh9td8bUndmdUM7Ppp
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 6:
+title: 柯文哲政治獻金假帳風暴重大進展！李文宗證人轉被告200萬交保 限制出境出海住居、電子監控
+media: Yahoo新聞
+date: 3 分鐘前
+datetime: nan
+desc: 民眾黨主席柯文哲捲入京華城弊案，北檢依圖利、違背職務收賄罪聲押柯文哲，不過北院裁定他無保請回。檢方今天（3日）下午提出抗告，在晚間還突然緊急傳喚柯競總財務長...
+link: https://tw.news.yahoo.com/%25E6%259F%25AF%25E6%2596%2587%25E5%2593%25B2%25E6%2594%25BF%25E6%25B2%25BB%25E7%258D%25BB%25E9%2587%2591%25E5%2581%2587%25E5%25B8%25B3%25E9%25A2%25A8%25E6%259A%25B4%25E9%2587%258D%25E5%25A4%25A7%25E9%2580%25B2%25E5%25B1%2595-%25E5%258C%2597%25E6%25AA%25A2%25E6%25B7%25B1%25E5%25A4%259C%25E7%25B7%258A%25E6%2580%25A5%25E5%2582%25B3%25E5%2596%259A%25E6%259D%258E%25E6%2596%2587%25E5%25AE%2597-151540643.html&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIABAC&usg=AOvVaw06hw2cMdfUBwM3gk7QiURA
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 7:
+title: 柯文哲疑涉政治獻金假帳案 李文宗證人轉被告 200萬交保受電子監控
+media: Yahoo新聞
+date: 5 分鐘前
+datetime: nan
+desc: 記者莊淇鈞／台北報導台北地檢署8月14日指揮調查局北部機動工作站兵分7路，赴會計師端木正的事務所、木可公關等處搜索，並以被告身份約談端木正、木可公關董事長李文娟...
+link: https://tw.news.yahoo.com/%25E6%259F%25AF%25E6%2596%2587%25E5%2593%25B2%25E7%2596%2591%25E6%25B6%2589%25E6%2594%25BF%25E6%25B2%25BB%25E7%258D%25BB%25E9%2587%2591%25E5%2581%2587%25E5%25B8%25B3%25E6%25A1%2588-%25E5%258C%2597%25E6%25AA%25A2%25E5%2586%258D%25E5%2582%25B3%25E5%2596%259A%25E6%259D%258E%25E6%2596%2587%25E5%25AE%2597%25E5%2588%25B0%25E6%25A1%2588-153007850.html&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIBhAC&usg=AOvVaw0kBs6qbmB_AzSFhSjDuRs6
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 8:
+title: 柯文哲政治獻金案李文宗證人轉被告200萬交保| 社會
+media: 中央社 CNA
+date: 6 分鐘前
+datetime: nan
+desc: 北檢偵辦柯文哲政治獻金案，今天再度指揮調查局展開偵查行動，以被告身分約談柯文哲競總財務長李文宗到案。檢察官深夜諭令李文宗200萬元交保，並限制出境、出海及電子...
+link: https://www.cna.com.tw/news/asoc/202409030410.aspx&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIARAC&usg=AOvVaw30N449DVUvV9a_nuWpc-zB
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
+Result 9:
+title: 追柯文哲假帳案！北檢諭令李文宗200萬交保 限制出境、電子監控
+media: 自由時報
+date: 8 分鐘前
+datetime: nan
+desc: 相關新聞請見︰北檢追柯文哲假帳案二度傳喚李文宗改列「被告」58 分鐘前
+link: https://news.ltn.com.tw/news/society/breakingnews/4789227&ved=2ahUKEwibpsm4m6eIAxVojK8BHbYuMXAQxfQBegQIBxAC&usg=AOvVaw3e5q-mJu9XTEA_MLVGIy_H
+img: data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+
