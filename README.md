@@ -4,7 +4,9 @@
 > 先以取其中一篇新聞中的特定標籤中的文字作為斷詞產生文字雲為練習。
 
 > 2024/09/03 更新：
-> 目前得到的網址是 Google頁面連結，才會轉到正確的新聞連結，可參考此專案 [SuYenTing/Python-web-crawler](https://github.com/SuYenTing/Python-web-crawler)解決方式
+> 如果是使用 get_news() 得到的網址是 Google頁面連結，才會轉到正確的新聞連結，可參考此專案 [SuYenTing/Python-web-crawler](https://github.com/SuYenTing/Python-web-crawler/blob/main/google_real_time_news.py)解決方式，再使用 google-news-url-decoder 模組。
+> 使用 search() 實測可以得到真正的網址，但尚未研究其細部怎麼做的。
+
 
 ## 參考資料：
 
