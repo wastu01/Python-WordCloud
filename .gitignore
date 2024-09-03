@@ -5,3 +5,4 @@
 **/.venv/
 **/.vscode/
 .vscode/settings.json
+/.idea
