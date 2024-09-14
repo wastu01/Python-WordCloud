@@ -7,3 +7,4 @@
 .vscode/settings.json
 /.idea
 .ipynb_checkpoints
+/venv
