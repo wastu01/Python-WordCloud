@@ -88,7 +88,7 @@ def main():
     print("Type of image_colors:", type(image_colors))
     print("Attributes and methods of image_colors:", dir(image_colors))
 
-    # # 生成文字雲
+    # 生成文字雲
     wordcloud = WordCloud(
     font_path=font_path_input,
     width=512,
