@@ -11,7 +11,7 @@ To-do:
 - [x] 使用 tl-idf 篩選關鍵詞
 - [x] 調整圖片遮罩增強視覺效果
 - [ ] 解決中文新聞日期格式問題
-- [ ] [使用 Transformer 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
+- [ ] [使用  CkipTagger 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
 - [ ] 圖表呈現媒體來源類型(例如：左派右派)
 
 ## 文字雲輸出畫面
