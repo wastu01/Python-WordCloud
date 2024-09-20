@@ -1,52 +1,38 @@
-# Python-WordCloud
+# Python-WordCloud: 文字雲視覺化應用：新聞關鍵字分析
 
-> 使用者輸入新聞關鍵字，得到 Google 新聞搜尋結果，使用 Jieba 進行斷詞分析，最終生成文字雲。
+> 使用者輸入欲搜尋新聞主題，得到 Google 新聞搜尋文字內容，接續使用 Jieba 套件進行斷詞分析，TF-IDF 算法提取關鍵詞，最終生成文字雲。
 
-> 理想目標：擴大文本搜尋範圍，改善斷詞結果，在網頁前端直接渲染文字雲，方便分享至社群平台。
-
-(2024/09/17更新)
-
-- `get_news()` 函數目前返回的是 Google 頁面轉址連結
-- 參考 [SuYenTing/Python-web-crawler](https://github.com/SuYenTing/Python-web-crawler/blob/main/google_real_time_news.py) 專案，使用 google-news-url-decoder 模組解決轉址問題
-- `search()` 函數可以獲取真正的新聞網址
-- 非英文語言搜尋時，無法返回正確的 datetime 時間格式
-
+> 理想目標：擴大文本搜尋範圍，改善斷詞結果，在網頁前端直接生成文字雲，方便分享至社群平台。
 
 To-do:
 
 - [x] 指定日期範圍搜尋新聞
-- [ ] 停用詞過濾詞彙
-- [ ] 圖表呈現媒體來源類型
-
-## 本專案使用的套件
-
-- [GoogleNews](https://pypi.org/project/GoogleNews/)
-- [jieba](https://pypi.org/project/jieba/)
-- [wordcloud](https://pypi.org/project/wordcloud/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-- [PIL](https://pypi.org/project/Pillow/)
-- [pandas](https://pypi.org/project/pandas/)
-- [numpy](https://pypi.org/project/numpy/)
-- [scipy](https://pypi.org/project/scipy/)
-
+- [x] 使用正則表達式過濾英文
+- [x] 使用 tl-idf 篩選關鍵詞
+- [x] 調整圖片遮罩增強視覺效果
+- [ ] 解決中文新聞日期格式問題
+- [ ] [使用 Transformer 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
+- [ ] 圖表呈現媒體來源類型(例如：左派右派)
 
 ## 文字雲輸出畫面
 
-![疫情相關文字雲](/img/2021-05-13-疫情.png)
+![疫情關鍵字文字雲](/img/2021-05-13-疫情.png)
+
+![柯文哲關鍵字文字雲](/img/20240918_柯文哲_relative_scaling30%.png)
+
+![]
+
+## 學習資源：
+
+- [Python GoogleNews 套件文檔](https://pypi.org/project/GoogleNews/)
+- [Python 斷詞與文字雲教學](http://120.108.221.55/PROFCHWU/dctai/index.php)
+- [自動化新聞搜尋實作](http://13.231.129.69/2020/11/11/python-googlenews/)
+- [GoogleNews 套件使用教學](https://clay-atlas.com/blog/2019/10/14/python-chinese-tutorial-googlenews-package/)
+- [大數據分析實務-資料分析](https://hackmd.io/@aaronlife/python-bigdata-02)
+- [Jieba 與 Gensim 歌詞斷詞分析 / TF-IDF 說明](https://github.com/youngmihuang/lyrics_application)
 
 
-## 參考資料：
-
-#### [Python GoogleNews 套件](https://pypi.org/project/GoogleNews/)
-#### [Python斷詞與文字雲教學課堂講義](http://120.108.221.55/PROFCHWU/dctai/index.php)
-#### [E W 的自動化搜尋新聞實作文章](http://13.231.129.69/2020/11/11/python-googlenews/)
-#### [Clay 的教學文章 [Python] 使用 GoogleNews 套件輕鬆取得 Google News 新聞資訊](https://clay-atlas.com/blog/2019/10/14/python-chinese-tutorial-googlenews-package/)
-#### [@aaronlife 第二堂課：大數據分析實務-資料分析](https://hackmd.io/@aaronlife/python-bigdata-02)
-
-### Jieba 進階用法 / tf-idf 說明：
-#### [YoungMi Huang 的教學文章 以 jieba 與 gensim 探索文本主題：五月天人生無限公司歌詞分析 ( I )](https://github.com/youngmihuang/lyrics_application)
-
-延伸閱讀
+## 延伸閱讀
 中研院中文詞知識庫小組計畫主持人馬偉雲專訪內容
 https://aiacademy.tw/what-is-nlp-natural-language-processing/
 
