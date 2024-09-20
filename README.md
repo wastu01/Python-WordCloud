@@ -18,6 +18,8 @@ To-do:
 
 ![疫情關鍵字文字雲](img/2021-05-13-疫情.png)
 
+![新聞關鍵字文字雲](https://github.com/wastu01/Python-WordCloud/blob/master/img/20240918_%E6%9F%AF%E6%96%87%E5%93%B2_relative_scaling30%25.png)
+
 ![柯文哲關鍵字文字雲](https://raw.githubusercontent.com/wastu01/Python-WordCloud/refs/heads/master/img/20240919_%E6%9F%AF%E6%96%87%E5%93%B2_relative_scaling20%25.png)
 
 
