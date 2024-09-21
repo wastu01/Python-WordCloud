@@ -25,8 +25,6 @@ To-do:
 
 ## 學習資源：
 
-- [Python GoogleNews 套件文檔](https://pypi.org/project/GoogleNews/)
-- [Python 斷詞與文字雲教學](http://120.108.221.55/PROFCHWU/dctai/index.php)
 - [自動化新聞搜尋實作](http://13.231.129.69/2020/11/11/python-googlenews/)
 - [GoogleNews 套件使用教學](https://clay-atlas.com/blog/2019/10/14/python-chinese-tutorial-googlenews-package/)
 - [大數據分析實務-資料分析](https://hackmd.io/@aaronlife/python-bigdata-02)
@@ -34,6 +32,7 @@ To-do:
 
 
 ## 延伸閱讀
+
 中研院中文詞知識庫小組計畫主持人馬偉雲專訪內容
 https://aiacademy.tw/what-is-nlp-natural-language-processing/
 
