@@ -11,14 +11,14 @@ To-do:
 - [x] 使用 tl-idf 篩選關鍵詞
 - [x] 調整圖片遮罩增強視覺效果
 - [ ] 解決中文新聞日期格式問題
-- [ ] [使用  CkipTagger 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
+- [ ] [使用 CkipTagger 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
 - [ ] 圖表呈現媒體來源類型(例如：左派右派)
 
 ## 文字雲輸出畫面
 
 ![疫情關鍵字文字雲](img/2021-05-13-疫情.png)
 
-![新聞關鍵字文字雲](https://github.com/wastu01/Python-WordCloud/blob/master/img/20240918_%E6%9F%AF%E6%96%87%E5%93%B2_relative_scaling30%25.png)
+![新聞關鍵字文字雲](img/20240920_柯文哲_title+desc_relative_scaling1%.png)
 
 ![柯文哲關鍵字文字雲](https://raw.githubusercontent.com/wastu01/Python-WordCloud/refs/heads/master/img/20240919_%E6%9F%AF%E6%96%87%E5%93%B2_relative_scaling20%25.png)
 
