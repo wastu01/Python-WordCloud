@@ -37,6 +37,15 @@ To-do:
 
 https://aiacademy.tw/what-is-nlp-natural-language-processing/
 
+中央研究院詞庫小組聊天機器人應用
+https://ckip.iis.sinica.edu.tw/project/chatq/
+
+
+其他想法：
+
+1. 使用者輸入"時事"，從 Google trends RSS 得到資料，分析時事關鍵字。
+2. 搭配 Google Search 查詢相關主題，加大文本資料。
+
 
 <!--if you see this, congrats! https://hackmd.io/@DCT/google-news-package-learning-with-gpt -->
 
