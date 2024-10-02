@@ -10,8 +10,8 @@ To-do:
 - [x] 使用正則表達式過濾英文
 - [x] 使用 tl-idf 篩選關鍵詞
 - [x] 調整圖片遮罩增強視覺效果
+- [x] [使用 CkipTagger 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
 - [ ] 解決中文新聞日期格式問題
-- [ ] [使用 CkipTagger 取代 Jieba](https://github.com/wastu01/Python-WordCloud/issues/1#issue-1028103420)
 - [ ] 圖表呈現媒體來源類型
 
 ## 文字雲輸出畫面
@@ -23,18 +23,18 @@ To-do:
 ![柯文哲關鍵字文字雲](https://raw.githubusercontent.com/wastu01/Python-WordCloud/refs/heads/master/img/20240919_%E6%9F%AF%E6%96%87%E5%93%B2_relative_scaling20%25.png)
 
 
-## 學習資源：
+## 參考資料：
 
 - [自動化新聞搜尋實作](http://13.231.129.69/2020/11/11/python-googlenews/)
 - [GoogleNews 套件使用教學](https://clay-atlas.com/blog/2019/10/14/python-chinese-tutorial-googlenews-package/)
 - [大數據分析實務-資料分析](https://hackmd.io/@aaronlife/python-bigdata-02)
 - [Jieba 與 Gensim 歌詞斷詞分析 / TF-IDF 說明](https://github.com/youngmihuang/lyrics_application)
-
+- [CKIP 中文斷詞模型使用範例 使用到 double zip  / extend / pandas apply /](https://medium.com/tkustatdc/nlp-自然語言處理-02-文本前處理-ckip中文斷詞-e7db5c147bef)
+- [CKIP Transformers documents](https://ckip-transformers.readthedocs.io/en/stable/main/readme.html)
 
 ## 延伸閱讀
 
 中研院中文詞知識庫小組計畫主持人馬偉雲專訪內容
-
 https://aiacademy.tw/what-is-nlp-natural-language-processing/
 
 中央研究院詞庫小組聊天機器人應用
