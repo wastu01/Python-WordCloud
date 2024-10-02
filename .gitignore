@@ -10,3 +10,4 @@
 /venv
 .html
 json_output/
+*.html
