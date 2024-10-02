@@ -9,3 +9,4 @@
 .ipynb_checkpoints
 /venv
 .html
+json_output/
