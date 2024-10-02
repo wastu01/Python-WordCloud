@@ -10,4 +10,6 @@
 /venv
 .html
 json_output/
+check-datatype/
 *.html
+*.txt
