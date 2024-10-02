@@ -31,6 +31,7 @@ To-do:
 - [Jieba 與 Gensim 歌詞斷詞分析 / TF-IDF 說明](https://github.com/youngmihuang/lyrics_application)
 - [CKIP 中文斷詞模型使用範例 使用到 double zip  / extend / pandas apply /](https://medium.com/tkustatdc/nlp-自然語言處理-02-文本前處理-ckip中文斷詞-e7db5c147bef)
 - [CKIP Transformers documents](https://ckip-transformers.readthedocs.io/en/stable/main/readme.html)
+- [簡單好學的中文LDA(Latent Dirichlet Allocation)主題分類模型](https://medium.com/@hjeremy1222/簡單好學的中文lda-latent-dirichlet-allocation-主題分類模型-b0a0d2435b60)
 
 ## 延伸閱讀
 
@@ -40,16 +41,33 @@ https://aiacademy.tw/what-is-nlp-natural-language-processing/
 中央研究院詞庫小組聊天機器人應用
 https://ckip.iis.sinica.edu.tw/project/chatq/
 
+文理組人都能上手的入門 NLP（自然語言處理） 鐵人賽系列
+https://ithelp.ithome.com.tw/articles/10295726
 
-其他想法：
 
-1. 使用者輸入"時事"，從 Google trends RSS 得到資料，分析時事關鍵字。
-2. 搭配 Google Search 查詢相關主題，加大文本資料。
+## 檔案內容
 
+Googlenews_bs4.ipynb : 嘗試解析 Google Search 的版本
+
+Googlenews_test.ipynb : GoogleNews 套件語法測試，資料轉換，資料呈現方式規劃
+
+Googlenews_v1.py : 原始構想版本
+
+Googlenews_v2.ipynb : 基於原始版本進行修改
+
+1. Jienba / Ckip transformer 斷詞模型比較
+2. 正則表達式篩選字詞，Counter 統計字數
+3. Pandas Series / DataFrame 資料排序轉換
+4. 從網頁獲取顏色清單 ( 使用 Javascript )
+5. 自定義圖片遮罩，產生棋盤形狀圖片遮罩 
+6. Pillow Numpy 圖片去躁，邊緣檢測
+(邊緣檢測的方式偏難懂，有使用 AI 輔助開發解惑)
+
+## 其他想法：
+
+1. 使用者輸入"時事"，從 Google Trends RSS 得到資料，分析時事產出文字雲。
+2. 使用著輸入"焦點"，從 Google News RSS 得到焦點新聞，分析時事產出文字雲。
+3. 搭配 Google Search 查詢相關主題，加大文本資料。
+4. 斷詞後能否評估此文章為正向還是負向情緒？
 
 <!--if you see this, congrats! https://hackmd.io/@DCT/google-news-package-learning-with-gpt -->
-
-
-
-
-
