@@ -61,12 +61,11 @@ Googlenews_v2.ipynb : 基於原始版本進行修改
 4. 從網頁獲取顏色清單 ( 使用 Javascript )
 5. 自定義圖片遮罩，產生棋盤形狀圖片遮罩 
 6. Pillow Numpy 圖片去躁，邊緣檢測
-(邊緣檢測的方式偏難懂，有使用 AI 輔助開發解惑)
 
 ## 其他想法：
 
-1. 使用者輸入"時事"，從 Google Trends RSS 得到資料，分析時事產出文字雲。
-2. 使用著輸入"焦點"，從 Google News RSS 得到焦點新聞，分析時事產出文字雲。
+1. 使用者輸入"時事"，從 [Google Trends RSS](https://trends.google.com/trending/rss?geo=TW) 得到資料，分析時事產出文字雲。
+2. 使用著輸入"焦點"，從 [Google News RSS](https://news.google.com/?hl=zh-TW&gl=TW&ceid=TW:zh-Hant) 得到焦點新聞，分析時事產出文字雲。
 3. 搭配 Google Search 查詢相關主題，加大文本資料。
 4. 斷詞後能否評估此文章為正向還是負向情緒？
 
