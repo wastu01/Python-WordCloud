@@ -31,7 +31,6 @@ To-do:
 - [Jieba 與 Gensim 歌詞斷詞分析 / TF-IDF 說明](https://github.com/youngmihuang/lyrics_application)
 - [CKIP 中文斷詞模型使用範例 使用到 double zip  / extend / pandas apply /](https://medium.com/tkustatdc/nlp-自然語言處理-02-文本前處理-ckip中文斷詞-e7db5c147bef)
 - [CKIP Transformers documents](https://ckip-transformers.readthedocs.io/en/stable/main/readme.html)
-- [簡單好學的中文LDA(Latent Dirichlet Allocation)主題分類模型](https://medium.com/@hjeremy1222/簡單好學的中文lda-latent-dirichlet-allocation-主題分類模型-b0a0d2435b60)
 
 ## 延伸閱讀
 
@@ -43,6 +42,9 @@ https://ckip.iis.sinica.edu.tw/project/chatq/
 
 文理組人都能上手的入門 NLP（自然語言處理） 鐵人賽系列
 https://ithelp.ithome.com.tw/articles/10295726
+
+簡單好學的中文LDA(Latent Dirichlet Allocation)主題分類模型
+https://medium.com/@hjeremy1222/簡單好學的中文lda-latent-dirichlet-allocation-主題分類模型-b0a0d2435b60
 
 
 ## 檔案內容
@@ -65,7 +67,7 @@ Googlenews_v2.ipynb : 基於原始版本進行修改
 ## 其他想法：
 
 1. 使用者輸入"時事"，從 [Google Trends RSS](https://trends.google.com/trending/rss?geo=TW) 得到資料，分析時事產出文字雲。
-2. 使用著輸入"焦點"，從 [Google News RSS](https://news.google.com/?hl=zh-TW&gl=TW&ceid=TW:zh-Hant) 得到焦點新聞，分析時事產出文字雲。
+2. 使用著輸入"焦點"，從 [Google News RSS](https://news.google.com/rss) 得到焦點新聞，分析時事產出文字雲。
 3. 搭配 Google Search 查詢相關主題，加大文本資料。
 4. 斷詞後能否評估此文章為正向還是負向情緒？
 
